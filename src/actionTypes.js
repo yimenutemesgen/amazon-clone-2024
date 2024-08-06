@@ -1,0 +1,12 @@
+
+
+
+
+
+
+export const ActionTypes = {
+  ADD_TO_BASKET: 'ADD_TO_BASKET',
+  EMPTY_BASKET: 'EMPTY_BASKET',
+  REMOVE_FROM_BASKET: 'REMOVE_FROM_BASKET',
+  SET_USER: 'SET_USER',
+};

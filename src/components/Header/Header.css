@@ -1,0 +1,305 @@
+/* 
+
+
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.header__logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 18px;
+}
+
+.header__search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.header__searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+
+.header__searchIcon {
+  padding: 5px;
+  height: 22px !important;
+  background-color: #cd9042;
+  border-radius: 2px;
+}
+
+.header__optionLineOne {
+  font-size: 10px;
+}
+
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header__basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+
+
+.header__language {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-left: 20px;
+
+}
+
+.header__flagIcon {
+  width: 20px;
+
+  height: 14px;
+
+  margin-right: 5px;
+
+}
+
+.header__languageSelect {
+  border: none;
+  background: transparent;
+  color: white;
+
+  font-size: 14px;
+
+  cursor: pointer;
+  padding: 2px 5px;
+  outline: none;
+
+}
+
+
+.header__address {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-right: 20px;
+}
+
+.header__locationIcon {
+  font-size: 20px;
+ 
+  margin-right: 10px;
+
+}
+
+.header__addressInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__optionLineOne {
+  font-size: 14px;
+
+}
+
+.header__optionLineTwo {
+  font-size: 13px;
+
+  font-weight: 800;
+
+}
+
+
+.header__searchDropdown {
+  height: 32px;
+
+  border: 1px solid #d9d9d9;
+ 
+  border-radius: 24px 0 0 24px;
+ 
+  background: #f7f7f7;
+  
+  color: #333;
+ 
+  font-size: 14px;
+  
+  padding: 0 8px;
+
+  margin-right: -1px;
+
+  cursor: pointer;
+  
+  outline: none;
+
+} */
+
+
+
+
+
+
+
+
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #131921;
+  max-width: 1500px;
+  overflow: hidden;
+}
+
+.header {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: #131921;
+}
+
+.header__logo {
+  width: 100px;
+  object-fit: contain;
+  margin: 0 20px;
+  margin-top: 18px;
+}
+
+.header__search {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 24px;
+}
+
+.header__searchInput {
+  height: 12px;
+  padding: 10px;
+  border: none;
+  width: 100%;
+}
+
+.header__searchIcon {
+  padding: 5px;
+  height: 22px !important;
+  background-color: #cd9042;
+  border-radius: 2px;
+}
+
+.header__optionLineOne {
+  font-size: 10px;
+}
+
+.header__optionLineTwo {
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.header__optionBasket {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.header__basketCount {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.header__option {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  margin-right: 10px;
+  color: white;
+}
+
+.header__language {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-left: 20px;
+}
+
+.header__flagIcon {
+  width: 20px;
+  height: 14px;
+  margin-right: 5px;
+}
+
+.header__languageSelect {
+  border: none;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 2px 5px;
+  outline: none;
+}
+
+.header__address {
+  display: flex;
+  align-items: center;
+  color: white;
+  margin-right: 20px;
+}
+
+.header__locationIcon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.header__addressInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__searchDropdownContainer {
+  display: flex;
+  align-items: center;
+}
+
+.header__searchDropdown {
+  height: 32px;
+  border: 1px solid #d9d9d9;
+  border-radius: 24px 0 0 24px;
+  background: #f7f7f7;
+  color: #333;
+  font-size: 14px;
+  padding: 0 8px;
+  margin-right: -1px;
+  cursor: pointer;
+  outline: none;
+}

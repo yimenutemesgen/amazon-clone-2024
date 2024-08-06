@@ -1,0 +1,110 @@
+
+
+
+
+/* Ensure that the header has no margin or padding that could create gaps */
+.header {
+    margin: 0;
+    padding: 0;
+    /* Any other styling specific to your header */
+}
+
+.carousel-container {
+    width: 100%;
+    max-width: 100vw;
+    /* Ensure the container doesn't exceed the viewport width */
+    margin: 0;
+    padding: 0;
+    /* Remove padding to ensure no gaps */
+    position: relative;
+    overflow: hidden;
+    /* Prevent horizontal scroll by hiding overflow */
+    box-sizing: border-box;
+    /* Ensure padding and border are included in width/height calculations */
+}
+
+.hero__img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    /* Adjust to fit content height dynamically */
+}
+
+.hero__img img {
+    width: 100%;
+    /* Make image fill container width */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Cover container area without distorting image */
+    max-height: 600px;
+    /* Adjust as needed to fit your design */
+}
+
+.carousel .control-arrow,
+.carousel .control-next.control-arrow,
+.carousel .control-prev.control-arrow {
+    opacity: 0.75;
+    transition: opacity 0.25s ease-in;
+}
+
+.carousel .control-arrow:hover {
+    opacity: 1;
+}
+
+.carousel .control-next.control-arrow:before {
+    border-left: 8px solid #fff;
+}
+
+.carousel .control-prev.control-arrow:before {
+    border-right: 8px solid #fff;
+}
+
+.carousel .slide {
+    background: none;
+    display: flex;
+    /* Ensure that the slide takes up full container space */
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+}
+
+.carousel .slide img {
+    width: 100%;
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: contain;
+    /* Ensure image fits within container without cropping */
+}
+
+.carousel .carousel-status {
+    display: none;
+}
+
+.carousel .thumbs-wrapper {
+    display: none;
+}
+
+.carousel .carousel-slider {
+    border-radius: 10px;
+    overflow: hidden;
+    /* Hide any overflow content */
+}
+
+.carousel .carousel {
+    position: relative;
+    z-index: 1;
+}
+
+.carousel .legend {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+

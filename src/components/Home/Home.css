@@ -1,0 +1,112 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f0f0f0;
+  justify-content: center;
+  width: 100%;
+  overflow-x: hidden;
+  /* Prevent horizontal scroll */
+}
+
+.home__container {
+  background-color: #f0f0f0;
+  padding: 20px;
+  max-width: 100vw;
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100vw;
+  /* Full viewport width */
+  margin: 0;
+  padding: 0;
+  /* Remove any padding that might affect width */
+  box-sizing: border-box;
+}
+
+.home__image {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.home__row {
+  display: flex;
+  z-index: 1;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  margin: 0;
+  /* Remove left and right margins */
+  padding: 0 5px;
+  /* Add padding if needed */
+  box-sizing: border-box;
+  /* Include padding and border in element's total width */
+  flex-wrap: wrap;
+  /* Ensure items wrap on smaller screens */
+}
+
+.product {
+  flex: 1;
+  margin: 0 10px;
+  max-width: 100%;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  box-sizing: border-box;
+  /* Include padding and border in element's total width */
+}
+
+.product__info {
+  text-align: left;
+}
+
+.product__info p {
+  margin: 0;
+}
+
+.product__price {
+  margin: 10px 0;
+}
+
+.product__rating {
+  display: flex;
+  align-items: center;
+}
+
+.product__rating p {
+  margin-right: 5px;
+}
+
+.product img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.product button {
+  background-color: #f0c14b;
+  border: 2px solid #a88734;
+  border-radius: 2px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.product button:hover {
+  background-color: #e3a81e;
+}
+
+@media (max-width: 768px) {
+  .home__row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .product {
+    margin-bottom: 20px;
+    max-width: 90%;
+  }
+}

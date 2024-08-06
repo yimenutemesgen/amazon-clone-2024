@@ -1,0 +1,49 @@
+
+
+
+
+
+
+.lower__container {
+    background-color: #232f3e;
+    color: white;
+    padding: 10px 20px;
+}
+
+.lower__list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lower__listItem {
+    padding: 8px 12px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.lower__listItem:hover {
+    background-color: #37475a;
+    border-radius: 3px;
+}
+
+.lower__all {
+    display: flex;
+    align-items: center;
+}
+
+.lower__menuIcon {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+.lower__allText {
+    margin: 0;
+}
+
+@media (min-width: 600px) {
+    .lower__container {
+        justify-content: space-between;
+    }
+}

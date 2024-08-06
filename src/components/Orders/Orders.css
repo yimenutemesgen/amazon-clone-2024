@@ -1,0 +1,55 @@
+
+
+
+
+/* src/Orders/Orders.css */
+.orders {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.orders__container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.order {
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.order__items {
+    margin-top: 10px;
+}
+
+.order__item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.order__item img {
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.order__itemInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.order__itemInfo h3 {
+    margin: 0;
+}
+
+.order__itemInfo p {
+    margin: 5px 0;
+}
