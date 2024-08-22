@@ -1,0 +1,173 @@
+
+
+
+
+
+.card__container {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    padding: 0 50px;
+    color: #111;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    background: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+
+
+.card__container:hover .button {
+    display: block;
+}
+
+.card__container img {
+    padding: 10px;
+    width: 100%;
+    height: 180px;
+    object-fit: contain;
+    transition: transform 0.3s;
+}
+
+.card__container:hover img {
+    transform: scale(1.05);
+}
+
+
+.button {
+    display: none;
+    padding: 5px 10px;
+    font-weight: 700;
+    font-size: 13px;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--primary-color);
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 30px;
+    position: absolute;
+    text-align: center;
+    bottom: 15px;
+    left: 0;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+
+
+
+
+
+.button:hover {
+    background-color: var(--primary-shade);
+    transform: scale(1.00)
+}
+
+.product__rating {
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+    color: #FFA41C;
+    font-size: 16px;
+}
+
+
+
+.product__description {
+    max-width: 700px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    margin: 10px 0;
+}
+
+
+
+.products__container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    height: auto;
+    max-width: 1450px;
+    margin: 100px auto;
+    padding: 0 30px;
+    gap: 10px;
+    justify-items: center;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.product__flexed {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    background: #fff;
+    height: auto;
+    display: flex;
+    padding: 15px;
+    gap: 20px;
+    width: 100%;
+    transition: box-shadow 0.3s;
+}
+
+.product__flexed:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+    /* Enhanced shadow on hover */
+}
+
+.product__flexed h3 {
+    padding: 20px 0;
+}
+
+.product__flexed .button {
+    display: block;
+    position: static;
+    width: 150px;
+    margin-right: 40px;
+}
+
+.product__flexed img {
+    width: 100px !important;
+    height: auto;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .product__flexed {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .product__flexed .button {
+        width: auto;
+        margin-right: 0;
+    }
+
+    .products__container {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        /* Adjusted grid for smaller screens */
+    }
+}
+
+/* Extra small devices (phones, 480px and down) */
+@media screen and (max-width: 480px) {
+    .card__container {
+        max-width: 100%;
+        padding: 15px;
+        /* Added padding for smaller screens */
+    }
+
+    .products__container {
+        gap: 20px;
+        /* Increased gap for better touch targets */
+    }
+}
+
+

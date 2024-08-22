@@ -1,0 +1,184 @@
+
+.payment__header {
+    padding: 20px 20px;
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba(237, 234, 234);
+    overflow-x: hidden;
+    box-sizing: border-box;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Main Payment Section */
+.payment {
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    background: #fff;
+}
+
+/* Flex Container */
+.flex {
+    display: flex;
+    gap: 20px;
+    padding: 30px;
+    flex-wrap: wrap;
+    /* Allows items to wrap on smaller screens */
+}
+
+/* Flex Items */
+.flex h3 {
+    min-width: 300px;
+    box-sizing: border-box;
+}
+
+.flex img {
+    width: 80px !important;
+}
+
+.flex div {
+    height: auto !important;
+    box-sizing: border-box;
+}
+
+/* Payment Card Container */
+.payment__card__container {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+/* Payment Details */
+.payment__details {
+    font-size: 20px;
+}
+
+.Payment__price {
+    padding: 20px;
+}
+
+.Payment__price div {
+    display: flex;
+    font-size: 16px;
+    gap: 10px;
+}
+
+.payment__details button {
+    margin-top: 15px;
+    width: 100%;
+    border: none;
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+}
+
+.payment__details button:hover {
+    background-color: var(--primary-shade);
+}
+
+/* Loading Spinner */
+.loading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    color: rgba(52, 52, 52);
+}
+
+/* Media Queries */
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    .payment__header {
+        font-size: 16px;
+    }
+
+    .payment {
+        padding: 15px;
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .flex h3 {
+        font-size: 16px;
+    }
+
+    .payment__card__container {
+        padding: 10px;
+    }
+
+    .Payment__price div {
+        font-size: 14px;
+    }
+
+    .payment__details button {
+        font-size: 14px;
+        padding: 8px;
+    }
+}
+
+/* Small to medium devices (tablets, 601px to 768px) */
+@media screen and (min-width: 601px) and (max-width: 768px) {
+    .payment__header {
+        font-size: 18px;
+    }
+
+    .payment {
+        padding: 20px;
+    }
+
+    .flex {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .payment__card__container {
+        padding: 15px;
+    }
+
+    .Payment__price div {
+        font-size: 16px;
+    }
+
+    .payment__details button {
+        font-size: 16px;
+        padding: 10px;
+    }
+}
+
+/* Large devices (desktops, 1200px and up) */
+@media screen and (min-width: 1200px) {
+    .payment__header {
+        font-size: 20px;
+    }
+
+    .payment {
+        padding: 30px;
+    }
+
+    .flex {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .payment__card__container {
+        max-width: 500px;
+    }
+
+    .Payment__price div {
+        font-size: 18px;
+    }
+
+    .payment__details button {
+        font-size: 16px;
+    }
+}
